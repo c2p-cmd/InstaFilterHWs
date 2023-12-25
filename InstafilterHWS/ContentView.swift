@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("nav_title") private var navTitle = "Processing Lab 🔬"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            EditingView()
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle($navTitle)
         }
-        .padding()
     }
 }
 

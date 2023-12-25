@@ -11,6 +11,9 @@
 		001E3D292B399DCF00D1F0A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E3D282B399DCF00D1F0A8 /* ContentView.swift */; };
 		001E3D2B2B399DD000D1F0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001E3D2A2B399DD000D1F0A8 /* Assets.xcassets */; };
 		001E3D2E2B399DD000D1F0A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001E3D2D2B399DD000D1F0A8 /* Preview Assets.xcassets */; };
+		001E3D352B399F6900D1F0A8 /* EditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E3D342B399F6900D1F0A8 /* EditingView.swift */; };
+		001E3D372B39E7F200D1F0A8 /* CIFilter+functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E3D362B39E7F200D1F0A8 /* CIFilter+functions.swift */; };
+		001E3D392B39F37500D1F0A8 /* ImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E3D382B39F37500D1F0A8 /* ImageDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		001E3D282B399DCF00D1F0A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		001E3D2A2B399DD000D1F0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001E3D2D2B399DD000D1F0A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		001E3D342B399F6900D1F0A8 /* EditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingView.swift; sourceTree = "<group>"; };
+		001E3D362B39E7F200D1F0A8 /* CIFilter+functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIFilter+functions.swift"; sourceTree = "<group>"; };
+		001E3D382B39F37500D1F0A8 /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				001E3D262B399DCF00D1F0A8 /* InstafilterHWSApp.swift */,
 				001E3D282B399DCF00D1F0A8 /* ContentView.swift */,
+				001E3D382B39F37500D1F0A8 /* ImageDataModel.swift */,
+				001E3D342B399F6900D1F0A8 /* EditingView.swift */,
+				001E3D362B39E7F200D1F0A8 /* CIFilter+functions.swift */,
 				001E3D2A2B399DD000D1F0A8 /* Assets.xcassets */,
 				001E3D2C2B399DD000D1F0A8 /* Preview Content */,
 			);
@@ -137,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001E3D352B399F6900D1F0A8 /* EditingView.swift in Sources */,
+				001E3D392B39F37500D1F0A8 /* ImageDataModel.swift in Sources */,
+				001E3D372B39E7F200D1F0A8 /* CIFilter+functions.swift in Sources */,
 				001E3D292B399DCF00D1F0A8 /* ContentView.swift in Sources */,
 				001E3D272B399DCF00D1F0A8 /* InstafilterHWSApp.swift in Sources */,
 			);
@@ -275,11 +287,13 @@
 				DEVELOPMENT_TEAM = VD4JPC3R94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Reqired for uploading media";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Required for uploading images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +318,13 @@
 				DEVELOPMENT_TEAM = VD4JPC3R94;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Reqired for uploading media";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Required for uploading images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
